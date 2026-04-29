@@ -154,3 +154,39 @@
     border-radius: 50%;
     
 }
+
+
+
+/* Card */
+
+.list-cards{
+    display: flex;
+    flex-direction: row;
+}
+
+.card-container{
+    width: 250px;
+    height: 500px;
+    background-color: rgb(0, 0, 0);
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    
+    
+}
+
+.card-img{
+    flex: 2;
+    /* background-color: blue; */
+}
+
+ .card-img img{
+    width: 250px;
+    height: 170px;
+    object-fit: cover;
+ }
+
+.card-detalhe{
+    flex: 3;
+}

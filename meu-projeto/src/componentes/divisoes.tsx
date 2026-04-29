@@ -1,7 +1,13 @@
 import "../style/style.css"
-import { Link } from "react-router-dom"
+import { useNavigate } from "react-router-dom"
 
 function Divisoes() {
+    const navegagor = useNavigate();
+
+    function Handvolta() {
+        navegagor(-1)
+    }
+
     return (
 
         <div className="d_container">
@@ -37,12 +43,12 @@ function Divisoes() {
                     <div className="quadrado">
 
                     </div>
-                    
-                </div>
 
+                </div>
+             
             </div>
-           <Link to='/'>Clique aqui</Link>
-            
+               <button onClick={Handvolta}>volta</button>
+
         </div>
 
     )

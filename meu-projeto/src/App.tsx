@@ -4,6 +4,10 @@ import { Route, Routes } from 'react-router-dom'
 import Home from './paginas/home'
 import Divisoes from './componentes/divisoes'
 import Sobreitens from './paginas/sobreitens'
+import Contador from './paginas/contador'
+import Negativo from './paginas/negativo'
+import Lista from './paginas/lista'
+import Requisicoes from './paginas/requisicoes'
 
 function App() {
   return (
@@ -12,6 +16,10 @@ function App() {
         <Route path='/' element={<Home/>} />
         <Route path='/divisoes' element={<Divisoes/>} />
         <Route path='/sobre/professores/:nomeprofessor/' element={<Sobreitens/>} /> 
+        <Route path='/contador' element={<Contador/>} />
+        <Route path='/negativo' element={<Negativo/>} />
+        <Route path='/lista' element={<Lista/>} />
+        <Route path='/requisicoes' element={<Requisicoes/>} />
       </Routes>
 
 
